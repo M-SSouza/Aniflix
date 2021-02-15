@@ -1,0 +1,158 @@
+:root {
+  --azul: #ffee00;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Elementos Base*/
+body {
+  background: var(--preta);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--azul);
+  font-family: "arial Black", Times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 13px;
+}
+
+header nav a:hover {
+  color: #ffff;
+}
+
+/*Filme Principal*/
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 100%),
+    url(/img/saoOrdinalScale2.jpg);
+
+  height: 600px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.filme-principal .player {
+  margin-bottom: 10px;
+}
+
+.titulo {
+  margin-top: 12%;
+  font-size: 40px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 1vh;
+  cursor: grabbing;
+}
+
+.item:hover .box-filme {
+  opacity: 0.2;
+  transition: 0.4s ease all;
+}
+
+.item:hover .botao {
+  display: block;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item .botao {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.item :last-child {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.foo {
+  display: flex;
+  flex-direction: row;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  justify-content: center;
+  height: 5vh;
+  align-items: center;
+}
